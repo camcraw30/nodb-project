@@ -1,37 +1,109 @@
-.fact-button {
-    width: 100vw;
-    /* height: 90vh; */
+header {
+  height: 75vh;
+  width: 100vw;
+  background-image: url(https://blackrockdigital.github.io/startbootstrap-agency/img/header-bg.jpg);
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+nav {
+  width: 100vw;
+  height: 6vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+ul {
+  width: 45vw;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul li:hover {
+  color: #FAD137;
+  cursor: pointer;
+}
+
+h1 {
+  color: #FAD137;
+  font-size: 30px;
+  font-style: inherit;
+  font-family: 'Kaushan Script', cursive;
+}
+
+.menu-button {
+  display: none;
+  width: 9vw;
+  height: 4vh;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  background: #FAD137;
+  border: none;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+}
+
+#menu {
+  transition: height 1000ms ease-in-out;
+}
+
+.menu-open {
+  width: 100vw;
+  height: 22vh;
+  color: white;
+  background: #212528;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-close {
+  height: 0vw;
+}
+
+.menu-close .menu-list {
+  display: none;
+}
+
+.menu-list {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 19.5vw;
+  font-size: 15px;
+  margin-bottom: 2vh;
+}
+
+.menu-list:hover {
+  cursor: pointer;
+  color: #FAD137;
+}
+
+@media (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+  nav {
+    height: 5.5vh;
+    background: #212528;
     display: flex;
-    align-items: flex-start;
-    /* justify-content: space-around; */
-    justify-content: center;
-}
-.add {
-    margin-top: 5vh;
-    margin-left: 12vw;
-    height: 5vh;
-    width: 35vh;
-    font-size: 1.4em;
-    font-weight: 650;
-    border: none;
-    text-decoration-color: #0a0a0a;
-    font-family: 'Mansalva', cursive;
-    transition: .5s;
-}
-.view {
-    margin-top: 5vh;
-    margin-left: 12vw;
-    height: 5vh;
-    width: 35vh;
-    font-size: 1.4em;
-    font-weight: 650;
-    border: none;
-    text-decoration-color: #0a0a0a;
-    font-family: 'Mansalva', cursive;
-    transition: .5s;
-}
-nav button:hover {
-    cursor: pointer;
-    color: black;
-    background-color: grey;
+    justify-content: space-around;
+    align-items: center;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  /* header {
+    margin-top: 5.5vh;
+  } */
 }
