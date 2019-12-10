@@ -1,0 +1,20 @@
+.header {
+    width: 100vw;
+    height: 10vh;
+    background: #0a0a0a
+}
+
+.orient {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.homeText {
+    position: relative;
+    left: 3vw;
+    font-size: 3em;
+    font-family: 'Mansalva', cursive;
+    font-weight: 600;
+    color: white
+}

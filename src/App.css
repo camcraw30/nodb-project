@@ -1,0 +1,37 @@
+.fact-button {
+    width: 100vw;
+    /* height: 90vh; */
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-around; */
+    justify-content: center;
+}
+.add {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    height: 5vh;
+    width: 35vh;
+    font-size: 1.4em;
+    font-weight: 650;
+    border: none;
+    text-decoration-color: #0a0a0a;
+    font-family: 'Mansalva', cursive;
+    transition: .5s;
+}
+.view {
+    margin-top: 5vh;
+    margin-left: 12vw;
+    height: 5vh;
+    width: 35vh;
+    font-size: 1.4em;
+    font-weight: 650;
+    border: none;
+    text-decoration-color: #0a0a0a;
+    font-family: 'Mansalva', cursive;
+    transition: .5s;
+}
+nav button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: grey;
+}
